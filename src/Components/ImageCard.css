@@ -1,0 +1,45 @@
+.image-card-container {
+    display: flex;              /* Use flexbox layout */
+    flex-wrap: wrap;           /* Allow wrapping to the next row */
+    justify-content: 40px; /* Space items evenly */
+    margin: 100px;                 /* Remove container margin */
+    padding: 10;                /* Remove container padding */
+    max-width: 100%;           /* Ensure it doesn't exceed the viewport */
+}
+
+.image-card {
+    position: relative;
+    margin: 10px;              /* Reduced spacing between images */
+    border-radius: 28px;       /* Rounded corners for the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 300px; /* 3 cards in a row with less margin */
+    height: 300px;            /* Set a fixed height for the card */
+}
+
+.image-card img {
+    width: 100%;              /* Make the image responsive */
+    height: 100%;             /* Set height to fill the card */
+    object-fit: cover;        /* Cover the area while maintaining aspect ratio */
+    display: block;           /* Remove any gaps below the image */
+}
+
+.save-button {
+    position: absolute;
+    top: 10px;                /* Adjust the vertical position */
+    right: 10px;              /* Adjust the horizontal position */
+    background-color: #28a745; /* Green background */
+    color: white;             /* White text */
+    border: none;             /* No border */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 6px 10px;        /* Adjusted padding inside the button */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.save-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.save-button:focus {
+    outline: none; /* Remove focus outline */
+}

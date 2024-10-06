@@ -1,0 +1,54 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 20px; /* Increased the padding to 20px from top/bottom */
+    box-sizing: border-box; /* Include padding in the total width */
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Space between items */
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a, .navbar ul li button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.navbar ul li button {
+    background-color: #ff6347;
+    border-radius: 4px;
+}
+
+.navbar ul li button:hover {
+    background-color: #e5533c;
+}
+
+body {
+    margin-top: 90px; /* Adjust this based on the increased height of the navbar */
+}

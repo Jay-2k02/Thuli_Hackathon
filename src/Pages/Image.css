@@ -1,0 +1,43 @@
+/* Image.css */
+.image-gallery {
+    display: flex;                 /* Use flexbox for layout */
+    flex-wrap: wrap;              /* Allow wrapping of items */
+    justify-content: space-between; /* Space items evenly */
+    margin: 0;                    /* Remove margin around the gallery */
+    padding: 10px;                /* Optional: Padding around the gallery */
+  }
+  
+  .image-card {
+    position: relative;
+    margin: 5px;                  /* Reduced margin between image cards */
+    width: calc(33.333% - 10px);  /* 3 cards in a row with space */
+    height: 300px;                /* Set a fixed height for uniformity */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 8px;           /* Rounded corners */
+    overflow: hidden;              /* Ensure content doesn't overflow */
+  }
+  
+  .image-card img {
+    width: 100%;                  /* Make the image responsive */
+    height: 100%;                 /* Fill the height of the card */
+    object-fit: cover;            /* Maintain aspect ratio and cover the area */
+    display: block;               /* Remove gaps below the image */
+  }
+  
+  .save-button {
+    position: absolute;
+    top: 10px;                    /* Positioning the button */
+    right: 10px;                  /* Positioning the button */
+    background-color: #28a745;    /* Button color */
+    color: white;                 /* Button text color */
+    border: none;                 /* No border */
+    border-radius: 5px;          /* Rounded corners */
+    padding: 6px 10px;           /* Padding for the button */
+    cursor: pointer;              /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .save-button:hover {
+    background-color: #297c3b;    /* Darker green on hover */
+  }
+  
