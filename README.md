@@ -4,6 +4,10 @@
 
 This application is a user-friendly image search platform that allows users to search for beautiful images using the Unsplash API. Users can create an account, log in, search for images, and save their favorite images to their profile. The key features of this app include user authentication (login, signup, logout), image searching, and the ability to save images for personalized collections.
 
+## Demo-Video
+
+link - https://drive.google.com/file/d/1K661Du9BbeNYOwWtxvFpn6g-sYRF_qK_/view?usp=sharing
+
 ## Features
 
 ### 1. **User Authentication**
@@ -57,3 +61,15 @@ This application is a user-friendly image search platform that allows users to s
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+
+2. Open a terminal and navigate to the unsplash-image-search folder and use the command.
+   ```bash
+   npm install
+
+3. Once the packages are installed, lets start the json-server (inside the unsplash-image-search folder)
+   ```bash
+   npx json-server -p 3500 -w ./src/Data/login.json
+
+4. Once the server is started, Open a new terminal and start the react app with the command
+   ```bash
+   npm start
