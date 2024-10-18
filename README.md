@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Image Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This application is a user-friendly image search platform that allows users to search for beautiful images using the Unsplash API. Users can create an account, log in, search for images, and save their favorite images to their profile. The key features of this app include user authentication (login, signup, logout), image searching, and the ability to save images for personalized collections.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. **User Authentication**
+   - **Login**: Registered users can log in with their email and password. The login form ensures secure authentication, allowing users to access their personal image collections.
+   - **Signup**: New users can create an account by providing their details such as email, username, and password. Upon successful signup, they can start using the image search features immediately.
+   - **Logout**: Users can securely log out from their account, which ensures that their session data is cleared and no unauthorized access can occur.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. **Image Search Functionality**
+   - **Search for Images**: Users can search for high-quality images using keywords or phrases. The search functionality is powered by the Unsplash API, providing access to a vast library of images. Users can enter their desired search term in the search bar, and the app displays a grid of relevant images.
+   - **Real-time Search**: The search results are fetched from the Unsplash API and updated in real-time, providing a smooth user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. **Saving Images**
+   - **Save Images to Profile**: Users have the ability to save their favorite images to their profile. This allows them to create a personalized collection of images that they can revisit at any time.
+   - **View Saved Images**: A dedicated section in the user profile allows users to view all the images they have saved. This makes it easy for users to manage their favorite images.
+   - **Remove Saved Images**: Users can remove images from their saved collection if they no longer want to keep them.
 
-### `npm test`
+### 4. **Integration with Unsplash API**
+   - The application uses the **Unsplash API** to search and retrieve images based on user queries. Each search returns a set of high-quality images related to the search term.
+   - **API Integration**: The app makes use of `axios` to send HTTP requests to the Unsplash API. This allows for seamless retrieval of data and efficient handling of API responses.
+   - **Secure API Requests**: API keys are handled securely, ensuring that requests to the Unsplash API are authenticated and follow the platform's usage policies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
 
-### `npm run build`
+1. **User Registration & Login**: 
+   - New users sign up with their details, while existing users can log in to access their account.
+   - After successful login, users are redirected to the home page where they can start searching for images.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Search for Images**: 
+   - Users enter keywords in the search bar to find images related to their interests.
+   - The app sends a request to the Unsplash API with the search term and displays the results in a grid format.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Save & Manage Images**: 
+   - Users can save images they like by clicking the "Save" button.
+   - Saved images are stored in the user's profile and can be accessed anytime.
+   - Users can also remove images from their saved collection if needed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Logout/Signout**:
+   - Users can log out of their account, ending their session securely.
+   - This ensures that user data is protected and only accessible when logged in.
 
-### `npm run eject`
+## Technologies Used
+   - **React**: For building the user interface and managing the state with `useContext` and `useState`.
+   - **Axios**: For making HTTP requests to the Unsplash API.
+   - **Unsplash API**: Provides access to a vast library of images that are displayed based on user queries.
+   - **CSS**: For styling the components and providing a user-friendly interface.
+   - **React Router**: For managing navigation and routing between different pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup & Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
